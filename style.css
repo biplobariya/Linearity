@@ -1,0 +1,288 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap');
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Nunito', sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+
+
+/* Navbar CSS */
+.navbar {
+  background-color: #111717;
+  padding: 20px 0;
+}
+.top-nav-row {
+  display: grid;
+  grid-template-columns: 2fr 8.5fr 1.5fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.top-nav-col2 {
+  display: flex;
+  justify-content: end;
+}
+
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li {
+  padding: 0 16px;
+}
+
+.menu ul li a {
+  color: #ffffffff;
+  text-decoration: none;
+}
+
+.top-nav-col3 {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.button a {
+  border: 2px solid #FD7C0F;
+  padding: 10px 20px;
+  border-radius: 48px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Second nav Css */
+.sec-nav {
+  background: #ffffff;
+  padding: 10px 0;
+}
+
+.secend-nav-row {
+  display: grid;
+  grid-template-columns: 3fr 8.6fr .4fr;
+  gap: 5px;
+  align-items: center;
+}
+
+.sec-nav-col-1 a {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #111717;
+}
+
+.sec-menu ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  list-style-type: none;
+}
+
+.sec-menu ul li {
+  padding: 0 12px;
+}
+
+.sec-menu ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #202020;
+}
+
+.search-icon {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+}
+
+.search-icon i {
+  color: #202020;
+}
+
+/* Hero Section Css */
+section.hero {
+  background-color: #5EF7B0;
+  padding: 120px 200px;
+}
+
+.hero-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-text p {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 0 10px;
+}
+
+
+.hero-text h2 {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 105.6px;
+  text-align: center;
+  color: #111717;
+}
+
+
+section.hero {
+  background-color: #5EF7B0;
+  /* background-image: url(./img/left-side-line.png) , url(./img/right-side-line.png);
+  background-repeat: no-repeat; */
+
+  position: relative;
+  min-height: 90vh;
+}
+
+.hero-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-text p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.hero-text h2 {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 105.6px;
+  text-align: center;
+  color: #111717;
+}
+
+.hero-img {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.h-img-right {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+.line-img .left-img {
+  position: absolute;
+  left: 0;
+  top: 13%;
+}
+
+.line-img .right-img {
+    position: absolute;
+    right: 0;
+    top: 23%;
+}
+
+/* Slider Section Css */
+.slider-sec{
+  padding: 80px 0;
+  position: relative;
+  min-height: 20vh;
+}
+
+.slider-container {
+  width: 1280px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 20px;
+  position: absolute;
+  top: -150%;
+  left: 20%;
+  border: 3px solid #111717;
+}
+
+.slider-row {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: 20px;
+}
+
+.slider-col-1 {
+  padding: 70px 120px 0 70px;
+}
+.slidr-text h2 {
+  font-size: 40px;
+  line-height: 48px;
+  color: #111717;
+}
+
+.slidr-text p {
+  font-size: 16px;
+  padding: 20px 0 15px;
+  font-weight: 400;
+  line-height: 28.8px;
+}
+
+.slidr-text a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #111717;
+  padding: 10px 32px;
+  border: 2px solid #111717;
+  border-radius: 48px;
+  display: inline-block;
+  gap: 8px;
+}
+
+.slider-img img {
+  width: 100%;
+  display: block;
+}
+
+.scn {
+  margin-top: 80px;
+}
+.scn a {
+  text-decoration: none;
+  padding: 12px;
+}
+
+.scn span {
+  display: inline-flex;
+  height: 48px;
+  width: 48px;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #111717;
+  margin: 0px 3px;
+}
+.scn .active{
+  border: 2px solid orangered;
+}
+
+
+section.essential-reading {
+  margin-top: 120px;
+  padding: 80px 0;
+}
