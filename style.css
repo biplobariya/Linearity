@@ -49,8 +49,21 @@ body{
 }
 
 .menu ul li a {
+  display: inline-block;
   color: #ffffffff;
   text-decoration: none;
+}
+.menu ul li a::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 2.4px;
+  transition: width .4s;
+  background: #FD7C0F;
+}
+
+.menu ul li a:hover::after {
+  width: 100%;
 }
 
 .top-nav-col3 {
@@ -65,6 +78,10 @@ body{
   border-radius: 48px;
   text-decoration: none;
   color: #ffffff;
+}
+.button a:hover {
+  background: #FD7C0F;
+  transition: 0.5s;
 }
 
 /* Second nav Css */
@@ -103,6 +120,18 @@ body{
   font-size: 14px;
   font-weight: 400;
   color: #202020;
+}
+.sec-menu ul li a::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #FD7C0F;
+  transition: width .4s;
+
+}
+.sec-menu ul li a:hover::after{
+  width: 100%;
 }
 
 .search-icon {
@@ -149,11 +178,9 @@ section.hero {
 
 section.hero {
   background-color: #5EF7B0;
-  /* background-image: url(./img/left-side-line.png) , url(./img/right-side-line.png);
-  background-repeat: no-repeat; */
-
   position: relative;
   min-height: 90vh;
+  z-index: -999;
 }
 
 .hero-row {
@@ -207,8 +234,6 @@ section.hero {
 /* Slider Section Css */
 .slider-sec{
   padding: 80px 0;
-  position: relative;
-  min-height: 20vh;
 }
 
 .slider-container {
@@ -216,10 +241,9 @@ section.hero {
   margin: 0 auto;
   background: #ffffff;
   border-radius: 20px;
-  position: absolute;
-  top: -150%;
-  left: 20%;
   border: 3px solid #111717;
+  margin-top: -350px;
+  z-index: 999;
 }
 
 .slider-row {
@@ -229,7 +253,7 @@ section.hero {
 }
 
 .slider-col-1 {
-  padding: 70px 120px 0 70px;
+  padding: 70px 120px 70px 70px;
 }
 .slidr-text h2 {
   font-size: 40px;
@@ -254,9 +278,19 @@ section.hero {
   display: inline-block;
   gap: 8px;
 }
-
+.slidr-text a:hover{
+  background: #FD7C0F;
+  color: #ffffff;
+  transition: .5s;
+  border-color: #FD7C0F;
+}
+.slider-img {
+  height: 100%;
+}
 .slider-img img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
@@ -267,7 +301,9 @@ section.hero {
   text-decoration: none;
   padding: 12px;
 }
-
+.scn a:hover{
+  color: #fff;
+}
 .scn span {
   display: inline-flex;
   height: 48px;
@@ -277,12 +313,129 @@ section.hero {
   border: 2px solid #111717;
   margin: 0px 3px;
 }
+.scn span:hover{
+  background: #FD7C0F;
+  transition: 0.5s;
+  border-color: #FD7C0F;
+}
 .scn .active{
   border: 2px solid orangered;
 }
 
+/* Essential Reading CSS */
 
 section.essential-reading {
-  margin-top: 120px;
-  padding: 80px 0;
+  padding: 150px 0 80px;
+}
+
+
+.e-heading-col {
+  position: relative;
+}
+
+.e-heading-col h3 {
+  display: inline-block;
+  padding: 12px 16px;
+  border-radius: 30px;
+  border: 3px solid #111717;
+  text-align: center;
+  background-color: #ffffff;
+  z-index: 999;
+}
+.e-heading-col h3::before {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #111717;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+.e-heading-col h3::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #111717;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+
+
+.essential-row-2 {
+  padding-top: 50px;
+}
+.essential-row-2 {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-card img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.blog-card {
+  padding: 20px 20px 40px 20px;
+  border: 3px solid #111717;
+  border-radius: 20px;
+  position: relative;
+}
+
+.blog-card .cat {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  padding: 4px 12px;
+  background: #ffffff;
+  border-radius: 25px;
+  display: inline-block;
+  border: 1.5px solid #111717;
+  font-size: 12px;
+  line-height: 19.5px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #111717;
+}
+.blog-card .cat:hover {
+  background: #FD7C0F;
+  border-color: #FD7C0F;
+  color: #fff;
+  transition: .4s;
+}
+
+.blog-card p a:hover {
+  color: #FD7C0F;
+  transition: .4s;
+}
+
+.blog-card h2 {
+  font-size: 20px;
+  line-height: 26px;
+  padding: 15px 5px 8px;
+  font-weight: 500;
+  color: #111717;
+}
+
+.blog-card p span{
+  color: #878B8B;
+  font-size: 12px;
+  line-height: 19.5px;
+
+}
+.blog-card p a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 19.5px;
+  font-weight: 500;
+  margin-left: 5px;
+  color: #111717;
 }
