@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Linearity HTML</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,6 +30,11 @@
               <li><a href="#">Login</a></li>
             </ul>
           </div>
+          <div class="menutrigger1">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>          
         </div>
         <div class="top-nav-col3">
           <div class="button">
@@ -55,6 +61,11 @@
               <li><a href="#">Design</a></li>
             </ul>
           </div>
+          <div class="menutrigger2">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
         <div class="sec-nav-col-3">
           <div class="search-icon">
@@ -64,6 +75,8 @@
       </div>
     </div>
   </div>
+          
+</div>
   <!-- Navigation Section End -->
 
   <!-- Hero Section Start -->
@@ -98,28 +111,73 @@
   <!-- Slider Sect Start -->
   <section class="slider-sec">
     <div class="slider-container">
-      <div class="slider-row">
-        <div class="slider-col-1">
-          <div class="slidr-text">
-            <h2>12 Illustration Styles Every Illustrator Should Know</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Interdum orci purus commodo habitant vitae est. Faucibus viverra pellentesque faucibus id cursus.</p>
-            <a href="#">Read More</a>
-          </div>
-          <div class="scn">
-            <span class="active"><a href="#">1</a></span>
-            <span><a href="#">2</a></span>
-            <span><a href="#">3</a></span>
-          </div>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="slider-row">
+              <div class="slider-col-1">
+                <div class="slidr-text">
+                  <h2>12 Illustration Styles Every Illustrator Should Know</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur. Interdum orci purus commodo habitant vitae est. Faucibus viverra pellentesque faucibus id cursus.</p>
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+              <div class="slider-col-2">
+                <div class="slider-img">
+                  <img src="./img/slider-img1.jpg" alt="Slider-img">
+                </div>
+              </div>
+            </div>
         </div>
-        <div class="slider-col-2">
-          <div class="slider-img">
-            <img src="./img/slider-img.png" alt="Slider-img">
-          </div>
+        <div class="swiper-slide">
+            <div class="slider-row">
+              <div class="slider-col-1">
+                <div class="slidr-text">
+                  <h2>Lorem Ipsum is simply Every Illustrator Should Know</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur. Interdum orci purus commodo habitant vitae est. Faucibus viverra pellentesque faucibus id cursus.</p>
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+              <div class="slider-col-2">
+                <div class="slider-img">
+                  <img src="./img/slider-img2.jpg" alt="Slider-img">
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slider-row">
+              <div class="slider-col-1">
+                <div class="slidr-text">
+                  <h2>There are many variations Illustrator Should Know</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur. Interdum orci purus commodo habitant vitae est. Faucibus viverra pellentesque faucibus id cursus.</p>
+                  <a href="#">Read More</a>
+                </div>
+                <!-- <div class="scn">
+                  <span class="active"><a href="#">1</a></span>
+                  <span><a href="#">2</a></span>
+                  <span><a href="#">3</a></span>
+                </div> -->
+              </div>
+              <div class="slider-col-2">
+                <div class="slider-img">
+                  <img src="./img/slider-img3.jpg" alt="Slider-img">
+                </div>
+              </div>
+            </div>
         </div>
       </div>
+      <div class="swiper-pagination"></div>
+    </div>
     </div>
   </section>
   <!-- Slider Sect Start -->
+
+
+
+
+
 
   <!-- Essential Reading Start -->
   <section class="essential-reading">
@@ -174,6 +232,7 @@
   <!-- Blog Category Section End -->
 
 
-  
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/app.js"></script>
 </body>
 </html>
