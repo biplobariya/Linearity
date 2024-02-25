@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +23,25 @@
         <div class="top-nav-col2">
           <div class="menu">
             <ul>
-              <li><a href="#">Use case</a></li>
+              <li class="dropdown-menu">
+                <a href="#">Use case  </a>
+                <div class="dropdown-content">
+                  <ul class="dropdown-item">
+                    <li class="drop-li">
+                      <a href="#">Dropdown item 1</a>
+                    </li>
+                    <li class="drop-li">
+                      <a href="#">Dropdown item 2</a>
+                    </li>
+                    <li class="drop-li">
+                      <a href="#">Dropdown item 3</a>
+                    </li>
+                    <li class="drop-li">
+                      <a href="#">Dropdown item 4</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
               <li><a href="#">Products</a></li>
               <li><a href="#">Pricing</a></li>
               <li><a href="#">learn</a></li>
@@ -34,9 +53,7 @@
             <span></span>
             <span></span>
             <span></span>
-          </div>          
-        </div>
-        <div class="top-nav-col3">
+          </div>
           <div class="button">
             <a href="#">Get Started</a>
           </div>
@@ -66,10 +83,24 @@
             <span></span>
             <span></span>
           </div>
-        </div>
-        <div class="sec-nav-col-3">
           <div class="search-icon">
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <div id="search-overlay" class="search-overlay" onclick="closePopup(); closeOverlay();"></div>
+            <button class="search-btn" onclick="openPopup(); openOverlay();"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+            <div id="search-popup" class="search-popup">
+              <div class="s-popup-content">
+                <div class="input-form">
+                  <input type="search">
+                  <div class="search-click">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  </div>
+                </div>
+                <!-- <div class="close-btn">
+                  <button class="sclose-btn" type="button" onclick="closePopup(); closeOverlay();"><i class="fa-regular fa-circle-xmark"></i></button>
+                </div> -->
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -174,11 +205,7 @@
   </section>
   <!-- Slider Sect Start -->
 
-
-
-
-
-
+=
   <!-- Essential Reading Start -->
   <section class="essential-reading">
     <div class="container">
